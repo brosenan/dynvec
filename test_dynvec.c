@@ -59,7 +59,6 @@ void test2() {
   assert(DVItemAddress(dv, 2) == p);
   assert(DVCapacity(dv) == 100);
   DVReserve(dv, 150); /* This triggers reallocation */
-  //assert(DVItemAddress(dv, 2) != p);
   assert(DVCapacity(dv) == 150);
 
   /* Adding elements within the reserved capacity does not cause
